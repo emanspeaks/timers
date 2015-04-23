@@ -12,7 +12,7 @@ int main()
 {
   cout << "Hello world!" << endl;
 
-  string fn = "pdam.txt";
+  string fn = "events.txt";
   eventList l(fn);
 
   system_clock::time_point t2, t1 = system_clock::now();
