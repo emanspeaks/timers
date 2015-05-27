@@ -87,6 +87,21 @@ string event::getFqDesc(bool omitanchor) const
     + ((omitanchor)? "" : s->getAnchorDesc()):"");
 }
 
+/*
+string event::getShortDesc() const
+{
+  string anchordesc("");
+  event* q = getAnchor();
+  string seqName = (q)? ((sequence*)this)->getAnchorDesc() + ":" : "";
+  while (q)
+  {
+    anchordesc = q->getDesc() + ":";
+    q = q->getAnchor();
+  }
+  return anchordesc + ((q)? seqName : m_desc);
+}
+*/
+
 void event::addChild(sequence* x)
 {
   m_children.push_back(x);

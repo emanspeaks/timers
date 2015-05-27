@@ -26,6 +26,7 @@ class eventList
       size_t &z);
 
     int getLongestFqDesc() const;
+    //int getLongestShortDesc() const;
 
   public:
     eventList(){};

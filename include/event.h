@@ -46,6 +46,7 @@ class event
     void setDesc(string desc) {m_desc = desc; return;}
     string getDesc() const {return m_desc;}
     string getFqDesc(bool omitanchor = false) const;
+    //string getShortDesc() const;
     virtual mstp getGmtEpoch() const = 0;
     virtual mstp getSgmtEpoch() const = 0;
 

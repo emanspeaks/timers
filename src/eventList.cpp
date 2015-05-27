@@ -47,6 +47,19 @@ int eventList::getLongestFqDesc() const
   return nmax;
 }
 
+/*
+int eventList::getLongestShortDesc() const
+{
+  int n, nmax = 1;
+  for (eseti i = m_collection.begin(); i != m_collection.end(); i++)
+  {
+    n = (*i)->getShortDesc().length();
+    nmax = (n>nmax)? n : nmax;
+  }
+  return nmax;
+}
+*/
+
 eventList::eventList(string fn)
 {
   ifstream f(fn);
